@@ -12,12 +12,49 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <section id="comment-section">
-
-    </section>
-    <section id="album-section">
-
+<body class="px-2 py-5 lg:px-40">
+    <section>
+        <h2 class="mb-3 text-xl text-center font-bold">Comments With API</h2>
+        <div class="overflow-x-auto mt-5">
+            <table class="table">
+                <!-- head -->
+                <thead>
+                    <tr>
+                        <th>
+                            <label>
+                                No.
+                            </label>
+                        </th>
+                        <th>Name & Email Address</th>
+                        <th>Comment</th>
+                    </tr>
+                </thead>
+                <tbody id="comments-container">
+                    <tr>
+                        <th>
+                            <label>
+                                1.
+                            </label>
+                        </th>
+                        <td>
+                            <div class="flex items-center gap-3">
+                                <div class="avatar">
+                                    <div class="mask mask-squircle h-12 w-12">
+                                        <img src="https://img.daisyui.com/images/profile/demo/2@94.webp" alt="API image" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="font-bold">Hart Hagerty</div>
+                                    <div class="text-sm opacity-50">United States</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            Zemlak, Daniel and Leannon
+                        </td>
+                    </tr>
+            </table>
+        </div>
     </section>
     <script src="js/api.js"></script>
 </body>
