@@ -18,17 +18,25 @@
         <div class="overflow-x-auto mt-5">
             <table class="table">
                 <!-- head -->
-                <thead>
-                    <tr>
-                        <th>
-                            <label>
+                <thead class="block md:table-header-group">
+                    <tr class="block md:table-row">
+                        <th class="block md:table-cell text-center md:text-left p-2">
+                            <label class="block md:inline-block text-sm md:text-base font-medium">
                                 No.
                             </label>
                         </th>
-                        <th>Photo & Name & Email Address</th>
-                        <th>Comment</th>
+                        <th class="block md:table-cell text-center md:text-left p-2">
+                            <span class="block md:inline-block text-sm md:text-base font-medium">
+                                Photo & Name & Email Address
+                            </span>
+                        </th>
+                        <th class="block md:table-cell text-center md:text-left p-2">
+                            <span class="block md:inline-block text-sm md:text-base font-medium">
+                                Comment
+                            </span>
+                        </th>
                     </tr>
-                </thead>
+                </thead>                
                 <!-- body -->
                 <tbody id="comments-container">
                     <!-- this container is empty, because all element add through api -->
